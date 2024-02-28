@@ -28,7 +28,7 @@ def home_page():
     # Display Logo
     st.sidebar.image("logo.png", use_column_width=True)
 
-    # Streamlit UI
+    
     st.title("Currency Converter")
 
     amount = st.number_input("Enter Your Amount ():", value=0.0, step=1.0)
@@ -38,7 +38,7 @@ def home_page():
         result = convert_currency(amount, currency.lower())
         st.write(result)
 
-    # Adding a column on the right
+
     st.text("")
     st.text("Conversion Rates:")
     st.text("1 USD = 279 PKR")
